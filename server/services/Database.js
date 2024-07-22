@@ -1,4 +1,4 @@
-const MySQL = require('promise-mysql2');
+const MySQL = require('mysql2/promise');
 const CommonHelper = require('../helpers/CommonHelper');
 
 const connectionPool = MySQL.createPool({

@@ -1,4 +1,4 @@
-const MySQL = require('promise-mysql2');
+const MySQL = require('mysql2/promise');
 const {
   getListHelmet,
   addHelmet,
@@ -7,7 +7,7 @@ const {
   deleteHelmet
 } = require('../../../server/services/Database');
 
-jest.mock('promise-mysql2', () => {
+jest.mock('mysql2/promise', () => {
   const queryMock = jest.fn();
   const releaseMock = jest.fn();
   return {
