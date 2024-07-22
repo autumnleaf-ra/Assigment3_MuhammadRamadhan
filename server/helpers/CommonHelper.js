@@ -1,7 +1,7 @@
 const Boom = require('boom');
 const Fs = require('fs');
 const Moment = require('moment');
-const _ = require('lodash');
+const { isEmpty } = require('lodash');
 const Pino = require('pino')({
   level: process.env.LOG_LEVEL || 'info',
   base: null,
@@ -17,7 +17,12 @@ const log = (tags, data) => {
   if (data) {
     Object.assign(logs, { data });
   }
-  Pino.info(logs);
+  if (!isEmpty(process.env.DISABLE_LOG)) {
+    // eslint-disable-next-line no-console
+    console.log(logs);
+  } else {
+    Pino.info(logs);
+  }
 };
 
 const logRequest = (req, res) => {
@@ -111,7 +116,7 @@ const __createTransactionId = () => {
 
 const preHandler = async (request, reply, next) => {
   request.startTime = process.hrtime();
-  if (_.isEmpty(request.headers.transactionid)) {
+  if (isEmpty(request.headers.transactionid)) {
     request.headers.transactionid = __createTransactionId();
   }
 
