@@ -329,7 +329,7 @@
                   "raw": "https://assigment3muhammadramadhan-production.up.railway.app/api/v2/helmet/type",
                   "protocol": "https",
                   "host": ["assigment3muhammadramadhan-production", "up", "railway", "app"],
-                  "path": ["api", "v2helmet", "type"]
+                  "path": ["api", "v2", "helmet", "type"]
                 }
               },
               "response": []
