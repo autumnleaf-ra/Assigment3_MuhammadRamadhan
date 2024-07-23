@@ -1,575 +1,402 @@
 {
-	"info": {
-		"_postman_id": "b9bd7812-68d9-454d-b275-2d004ccd42a6",
-		"name": "CRUD- Helmet Store",
-		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
-		"_exporter_id": "29613461"
-	},
-	"item": [
-		{
-			"name": "Dev",
-			"item": [
-				{
-					"name": "API V1",
-					"item": [
-						{
-							"name": "Get All Helmet",
-							"request": {
-								"method": "GET",
-								"header": [],
-								"url": {
-									"raw": "http://localhost:8080/api/v1/helmet",
-									"protocol": "http",
-									"host": [
-										"localhost"
-									],
-									"port": "8080",
-									"path": [
-										"api",
-										"v1",
-										"helmet"
-									]
-								}
-							},
-							"response": []
-						},
-						{
-							"name": "Get All Helmet Type",
-							"request": {
-								"method": "GET",
-								"header": [],
-								"url": {
-									"raw": "http://localhost:8080/api/v1/helmet/type",
-									"protocol": "http",
-									"host": [
-										"localhost"
-									],
-									"port": "8080",
-									"path": [
-										"api",
-										"v1",
-										"helmet",
-										"type"
-									]
-								}
-							},
-							"response": []
-						},
-						{
-							"name": "Add Helmet",
-							"request": {
-								"method": "POST",
-								"header": [],
-								"body": {
-									"mode": "raw",
-									"raw": "{\n    \"type\" : \"1\",\n    \"name\" : \"Arai F\",\n    \"price\" : \"2500000\",\n    \"stock\" : 100\n}",
-									"options": {
-										"raw": {
-											"language": "json"
-										}
-									}
-								},
-								"url": {
-									"raw": "http://localhost:8080/api/v1/helmet/add_helmet",
-									"protocol": "http",
-									"host": [
-										"localhost"
-									],
-									"port": "8080",
-									"path": [
-										"api",
-										"v1",
-										"helmet",
-										"add_helmet"
-									]
-								}
-							},
-							"response": []
-						},
-						{
-							"name": "Update Price Stock Helmet",
-							"request": {
-								"method": "PUT",
-								"header": [],
-								"body": {
-									"mode": "raw",
-									"raw": "{\n    \"price\": 52.55,\n    \"stock\" : 100\n}",
-									"options": {
-										"raw": {
-											"language": "json"
-										}
-									}
-								},
-								"url": {
-									"raw": "http://localhost:8080/api/v1/helmet/edit_helmet/1",
-									"protocol": "http",
-									"host": [
-										"localhost"
-									],
-									"port": "8080",
-									"path": [
-										"api",
-										"v1",
-										"helmet",
-										"edit_helmet",
-										"1"
-									]
-								}
-							},
-							"response": []
-						},
-						{
-							"name": "Delete Helmet",
-							"request": {
-								"method": "DELETE",
-								"header": [],
-								"url": {
-									"raw": "http://localhost:8080/api/v1/helmet/delete/6",
-									"protocol": "http",
-									"host": [
-										"localhost"
-									],
-									"port": "8080",
-									"path": [
-										"api",
-										"v1",
-										"helmet",
-										"delete",
-										"6"
-									]
-								}
-							},
-							"response": []
-						}
-					]
-				},
-				{
-					"name": "API V2",
-					"item": [
-						{
-							"name": "Get All Helmet V2",
-							"request": {
-								"method": "GET",
-								"header": [],
-								"url": {
-									"raw": "http://localhost:8080/api/v2/helmet",
-									"protocol": "http",
-									"host": [
-										"localhost"
-									],
-									"port": "8080",
-									"path": [
-										"api",
-										"v2",
-										"helmet"
-									]
-								}
-							},
-							"response": []
-						},
-						{
-							"name": "Get All Helmet Type V2",
-							"request": {
-								"method": "GET",
-								"header": [],
-								"url": {
-									"raw": "http://localhost:8080/api/v2/helmet/type",
-									"protocol": "http",
-									"host": [
-										"localhost"
-									],
-									"port": "8080",
-									"path": [
-										"api",
-										"v2",
-										"helmet",
-										"type"
-									]
-								}
-							},
-							"response": []
-						},
-						{
-							"name": "Add Helmet V2",
-							"request": {
-								"method": "POST",
-								"header": [],
-								"body": {
-									"mode": "raw",
-									"raw": "{\n    \"type\" : 2,\n    \"name\" : \"Arai Z\",\n    \"price\" : 25000,\n    \"stock\" : 10\n}",
-									"options": {
-										"raw": {
-											"language": "json"
-										}
-									}
-								},
-								"url": {
-									"raw": "http://localhost:8080/api/v2/helmet/add_helmet",
-									"protocol": "http",
-									"host": [
-										"localhost"
-									],
-									"port": "8080",
-									"path": [
-										"api",
-										"v2",
-										"helmet",
-										"add_helmet"
-									]
-								}
-							},
-							"response": []
-						},
-						{
-							"name": "Update Price Stock Helmet V2",
-							"request": {
-								"method": "PUT",
-								"header": [],
-								"body": {
-									"mode": "raw",
-									"raw": "{\n    \"price\": 5255,\n    \"stock\" : 100\n}",
-									"options": {
-										"raw": {
-											"language": "json"
-										}
-									}
-								},
-								"url": {
-									"raw": "http://localhost:8080/api/v2/helmet/edit_helmet/9",
-									"protocol": "http",
-									"host": [
-										"localhost"
-									],
-									"port": "8080",
-									"path": [
-										"api",
-										"v2",
-										"helmet",
-										"edit_helmet",
-										"9"
-									]
-								}
-							},
-							"response": []
-						},
-						{
-							"name": "Delete Helmet V2",
-							"request": {
-								"method": "DELETE",
-								"header": [],
-								"url": {
-									"raw": "http://localhost:8080/api/v2/helmet/delete/9",
-									"protocol": "http",
-									"host": [
-										"localhost"
-									],
-									"port": "8080",
-									"path": [
-										"api",
-										"v2",
-										"helmet",
-										"delete",
-										"9"
-									]
-								}
-							},
-							"response": []
-						}
-					]
-				}
-			]
-		},
-		{
-			"name": "Production",
-			"item": [
-				{
-					"name": "API V1",
-					"item": [
-						{
-							"name": "Get All Helmet",
-							"request": {
-								"method": "GET",
-								"header": [],
-								"url": {
-									"raw": "https://assigment3muhammadramadhan-production.up.railway.app/api/v1/helmet",
-									"protocol": "https",
-									"host": [
-										"assigment3muhammadramadhan-production",
-										"up",
-										"railway",
-										"app"
-									],
-									"path": [
-										"api",
-										"v1",
-										"helmet"
-									]
-								}
-							},
-							"response": []
-						},
-						{
-							"name": "Get All Helmet Type",
-							"request": {
-								"method": "GET",
-								"header": [],
-								"url": {
-									"raw": "https://assigment3muhammadramadhan-production.up.railway.app/api/v1/helmet/type",
-									"protocol": "https",
-									"host": [
-										"assigment3muhammadramadhan-production",
-										"up",
-										"railway",
-										"app"
-									],
-									"path": [
-										"api",
-										"v1",
-										"helmet",
-										"type"
-									]
-								}
-							},
-							"response": []
-						},
-						{
-							"name": "Add Helmet",
-							"request": {
-								"method": "POST",
-								"header": [],
-								"body": {
-									"mode": "raw",
-									"raw": "{\n    \"type\" : 1,\n    \"name\" : \"Arai A\",\n    \"price\" : 25000,\n    \"stock\" : 100\n}",
-									"options": {
-										"raw": {
-											"language": "json"
-										}
-									}
-								},
-								"url": {
-									"raw": "https://assigment3muhammadramadhan-production.up.railway.app/api/v1/helmet/add_helmet",
-									"protocol": "https",
-									"host": [
-										"assigment3muhammadramadhan-production",
-										"up",
-										"railway",
-										"app"
-									],
-									"path": [
-										"api",
-										"v1",
-										"helmet",
-										"add_helmet"
-									]
-								}
-							},
-							"response": []
-						},
-						{
-							"name": "Update Price Stock Helmet",
-							"request": {
-								"method": "PUT",
-								"header": [],
-								"body": {
-									"mode": "raw",
-									"raw": "{\n    \"price\": 52.55,\n    \"stock\" : 100\n}",
-									"options": {
-										"raw": {
-											"language": "json"
-										}
-									}
-								},
-								"url": {
-									"raw": "https://assigment3muhammadramadhan-production.up.railway.app/api/v1/helmet/edit_helmet/1",
-									"protocol": "https",
-									"host": [
-										"assigment3muhammadramadhan-production",
-										"up",
-										"railway",
-										"app"
-									],
-									"path": [
-										"api",
-										"v1",
-										"helmet",
-										"edit_helmet",
-										"1"
-									]
-								}
-							},
-							"response": []
-						},
-						{
-							"name": "Delete Helmet",
-							"request": {
-								"method": "DELETE",
-								"header": [],
-								"url": {
-									"raw": "https://assigment3muhammadramadhan-production.up.railway.app/api/v1/helmet/delete/6",
-									"protocol": "https",
-									"host": [
-										"assigment3muhammadramadhan-production",
-										"up",
-										"railway",
-										"app"
-									],
-									"path": [
-										"api",
-										"v1",
-										"helmet",
-										"delete",
-										"6"
-									]
-								}
-							},
-							"response": []
-						}
-					]
-				},
-				{
-					"name": "API V2",
-					"item": [
-						{
-							"name": "Get All Helmet V2",
-							"request": {
-								"method": "GET",
-								"header": [],
-								"url": {
-									"raw": "https://assigment3muhammadramadhan-production.up.railway.app/api/v2/helmet",
-									"protocol": "https",
-									"host": [
-										"assigment3muhammadramadhan-production",
-										"up",
-										"railway",
-										"app"
-									],
-									"path": [
-										"api",
-										"v2",
-										"helmet"
-									]
-								}
-							},
-							"response": []
-						},
-						{
-							"name": "Get All Helmet Type V2",
-							"request": {
-								"method": "GET",
-								"header": [],
-								"url": {
-									"raw": "https://assigment3muhammadramadhan-production.up.railway.app/api/v2helmet/type",
-									"protocol": "https",
-									"host": [
-										"assigment3muhammadramadhan-production",
-										"up",
-										"railway",
-										"app"
-									],
-									"path": [
-										"api",
-										"v2helmet",
-										"type"
-									]
-								}
-							},
-							"response": []
-						},
-						{
-							"name": "Add Helmet V2",
-							"request": {
-								"method": "POST",
-								"header": [],
-								"body": {
-									"mode": "raw",
-									"raw": "{\n    \"type\" : 1,\n    \"name\" : \"Arai J\",\n    \"price\" : 2000000,\n    \"stock\" : 5\n}",
-									"options": {
-										"raw": {
-											"language": "json"
-										}
-									}
-								},
-								"url": {
-									"raw": "https://assigment3muhammadramadhan-production.up.railway.app/api/v2/helmet/add_helmet",
-									"protocol": "https",
-									"host": [
-										"assigment3muhammadramadhan-production",
-										"up",
-										"railway",
-										"app"
-									],
-									"path": [
-										"api",
-										"v2",
-										"helmet",
-										"add_helmet"
-									]
-								}
-							},
-							"response": []
-						},
-						{
-							"name": "Update Price Stock Helmet V2",
-							"request": {
-								"method": "PUT",
-								"header": [],
-								"body": {
-									"mode": "raw",
-									"raw": "{\n    \"price\": 52.55,\n    \"stock\" : 100\n}",
-									"options": {
-										"raw": {
-											"language": "json"
-										}
-									}
-								},
-								"url": {
-									"raw": "https://assigment3muhammadramadhan-production.up.railway.app/api/v2/helmet/edit_helmet/1",
-									"protocol": "https",
-									"host": [
-										"assigment3muhammadramadhan-production",
-										"up",
-										"railway",
-										"app"
-									],
-									"path": [
-										"api",
-										"v2",
-										"helmet",
-										"edit_helmet",
-										"1"
-									]
-								}
-							},
-							"response": []
-						},
-						{
-							"name": "Delete Helmet V2",
-							"request": {
-								"method": "DELETE",
-								"header": [],
-								"url": {
-									"raw": "https://assigment3muhammadramadhan-production.up.railway.app/api/v1/helmet/delete/6",
-									"protocol": "https",
-									"host": [
-										"assigment3muhammadramadhan-production",
-										"up",
-										"railway",
-										"app"
-									],
-									"path": [
-										"api",
-										"v1",
-										"helmet",
-										"delete",
-										"6"
-									]
-								}
-							},
-							"response": []
-						}
-					]
-				}
-			]
-		}
-	]
+  "info": {
+    "_postman_id": "b9bd7812-68d9-454d-b275-2d004ccd42a6",
+    "name": "CRUD- Helmet Store",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "29613461"
+  },
+  "item": [
+    {
+      "name": "Dev",
+      "item": [
+        {
+          "name": "API V1",
+          "item": [
+            {
+              "name": "Get All Helmet",
+              "request": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                  "raw": "http://localhost:8080/api/v1/helmet",
+                  "protocol": "http",
+                  "host": ["localhost"],
+                  "port": "8080",
+                  "path": ["api", "v1", "helmet"]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "Get All Helmet Type",
+              "request": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                  "raw": "http://localhost:8080/api/v1/helmet/type",
+                  "protocol": "http",
+                  "host": ["localhost"],
+                  "port": "8080",
+                  "path": ["api", "v1", "helmet", "type"]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "Add Helmet",
+              "request": {
+                "method": "POST",
+                "header": [],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n    \"type\" : \"1\",\n    \"name\" : \"Arai F\",\n    \"price\" : \"2500000\",\n    \"stock\" : 100\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "http://localhost:8080/api/v1/helmet/add_helmet",
+                  "protocol": "http",
+                  "host": ["localhost"],
+                  "port": "8080",
+                  "path": ["api", "v1", "helmet", "add_helmet"]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "Update Price Stock Helmet",
+              "request": {
+                "method": "PUT",
+                "header": [],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n    \"price\": 52.55,\n    \"stock\" : 100\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "http://localhost:8080/api/v1/helmet/edit_helmet/1",
+                  "protocol": "http",
+                  "host": ["localhost"],
+                  "port": "8080",
+                  "path": ["api", "v1", "helmet", "edit_helmet", "1"]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "Delete Helmet",
+              "request": {
+                "method": "DELETE",
+                "header": [],
+                "url": {
+                  "raw": "http://localhost:8080/api/v1/helmet/delete/6",
+                  "protocol": "http",
+                  "host": ["localhost"],
+                  "port": "8080",
+                  "path": ["api", "v1", "helmet", "delete", "6"]
+                }
+              },
+              "response": []
+            }
+          ]
+        },
+        {
+          "name": "API V2",
+          "item": [
+            {
+              "name": "Get All Helmet V2",
+              "request": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                  "raw": "http://localhost:8080/api/v2/helmet",
+                  "protocol": "http",
+                  "host": ["localhost"],
+                  "port": "8080",
+                  "path": ["api", "v2", "helmet"]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "Get All Helmet Type V2",
+              "request": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                  "raw": "http://localhost:8080/api/v2/helmet/type",
+                  "protocol": "http",
+                  "host": ["localhost"],
+                  "port": "8080",
+                  "path": ["api", "v2", "helmet", "type"]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "Add Helmet V2",
+              "request": {
+                "method": "POST",
+                "header": [],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n    \"type\" : 2,\n    \"name\" : \"Arai Z\",\n    \"price\" : 25000,\n    \"stock\" : 10\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "http://localhost:8080/api/v2/helmet/add_helmet",
+                  "protocol": "http",
+                  "host": ["localhost"],
+                  "port": "8080",
+                  "path": ["api", "v2", "helmet", "add_helmet"]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "Update Price Stock Helmet V2",
+              "request": {
+                "method": "PUT",
+                "header": [],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n    \"price\": 5255,\n    \"stock\" : 100\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "http://localhost:8080/api/v2/helmet/edit_helmet/9",
+                  "protocol": "http",
+                  "host": ["localhost"],
+                  "port": "8080",
+                  "path": ["api", "v2", "helmet", "edit_helmet", "9"]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "Delete Helmet V2",
+              "request": {
+                "method": "DELETE",
+                "header": [],
+                "url": {
+                  "raw": "http://localhost:8080/api/v2/helmet/delete/9",
+                  "protocol": "http",
+                  "host": ["localhost"],
+                  "port": "8080",
+                  "path": ["api", "v2", "helmet", "delete", "9"]
+                }
+              },
+              "response": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Production",
+      "item": [
+        {
+          "name": "API V1",
+          "item": [
+            {
+              "name": "Get All Helmet",
+              "request": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                  "raw": "https://assigment3muhammadramadhan-production.up.railway.app/api/v1/helmet",
+                  "protocol": "https",
+                  "host": ["assigment3muhammadramadhan-production", "up", "railway", "app"],
+                  "path": ["api", "v1", "helmet"]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "Get All Helmet Type",
+              "request": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                  "raw": "https://assigment3muhammadramadhan-production.up.railway.app/api/v1/helmet/type",
+                  "protocol": "https",
+                  "host": ["assigment3muhammadramadhan-production", "up", "railway", "app"],
+                  "path": ["api", "v1", "helmet", "type"]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "Add Helmet",
+              "request": {
+                "method": "POST",
+                "header": [],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n    \"type\" : 1,\n    \"name\" : \"Arai A\",\n    \"price\" : 25000,\n    \"stock\" : 100\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "https://assigment3muhammadramadhan-production.up.railway.app/api/v1/helmet/add_helmet",
+                  "protocol": "https",
+                  "host": ["assigment3muhammadramadhan-production", "up", "railway", "app"],
+                  "path": ["api", "v1", "helmet", "add_helmet"]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "Update Price Stock Helmet",
+              "request": {
+                "method": "PUT",
+                "header": [],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n    \"price\": 52.55,\n    \"stock\" : 100\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "https://assigment3muhammadramadhan-production.up.railway.app/api/v1/helmet/edit_helmet/1",
+                  "protocol": "https",
+                  "host": ["assigment3muhammadramadhan-production", "up", "railway", "app"],
+                  "path": ["api", "v1", "helmet", "edit_helmet", "1"]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "Delete Helmet",
+              "request": {
+                "method": "DELETE",
+                "header": [],
+                "url": {
+                  "raw": "https://assigment3muhammadramadhan-production.up.railway.app/api/v1/helmet/delete/6",
+                  "protocol": "https",
+                  "host": ["assigment3muhammadramadhan-production", "up", "railway", "app"],
+                  "path": ["api", "v1", "helmet", "delete", "6"]
+                }
+              },
+              "response": []
+            }
+          ]
+        },
+        {
+          "name": "API V2",
+          "item": [
+            {
+              "name": "Get All Helmet V2",
+              "request": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                  "raw": "https://assigment3muhammadramadhan-production.up.railway.app/api/v2/helmet",
+                  "protocol": "https",
+                  "host": ["assigment3muhammadramadhan-production", "up", "railway", "app"],
+                  "path": ["api", "v2", "helmet"]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "Get All Helmet Type V2",
+              "request": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                  "raw": "https://assigment3muhammadramadhan-production.up.railway.app/api/v2/helmet/type",
+                  "protocol": "https",
+                  "host": ["assigment3muhammadramadhan-production", "up", "railway", "app"],
+                  "path": ["api", "v2helmet", "type"]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "Add Helmet V2",
+              "request": {
+                "method": "POST",
+                "header": [],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n    \"type\" : 1,\n    \"name\" : \"Arai J\",\n    \"price\" : 2000000,\n    \"stock\" : 5\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "https://assigment3muhammadramadhan-production.up.railway.app/api/v2/helmet/add_helmet",
+                  "protocol": "https",
+                  "host": ["assigment3muhammadramadhan-production", "up", "railway", "app"],
+                  "path": ["api", "v2", "helmet", "add_helmet"]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "Update Price Stock Helmet V2",
+              "request": {
+                "method": "PUT",
+                "header": [],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n    \"price\": 52.55,\n    \"stock\" : 100\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "https://assigment3muhammadramadhan-production.up.railway.app/api/v2/helmet/edit_helmet/1",
+                  "protocol": "https",
+                  "host": ["assigment3muhammadramadhan-production", "up", "railway", "app"],
+                  "path": ["api", "v2", "helmet", "edit_helmet", "1"]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "Delete Helmet V2",
+              "request": {
+                "method": "DELETE",
+                "header": [],
+                "url": {
+                  "raw": "https://assigment3muhammadramadhan-production.up.railway.app/api/v1/helmet/delete/6",
+                  "protocol": "https",
+                  "host": ["assigment3muhammadramadhan-production", "up", "railway", "app"],
+                  "path": ["api", "v1", "helmet", "delete", "6"]
+                }
+              },
+              "response": []
+            }
+          ]
+        }
+      ]
+    }
+  ]
 }
