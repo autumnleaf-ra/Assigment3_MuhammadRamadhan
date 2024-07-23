@@ -171,3 +171,9 @@ response:
     "transaction_id": "A3022407230346006160"
 }
 ```
+
+
+## Unit Testing
+<p align="center">
+  <img src="https://i.ibb.co.com/BBfK5CT/Screen-Shot-1446-01-18-at-11-02-16.png" alt="Unit Test">
+</p>
